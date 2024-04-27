@@ -1,0 +1,413 @@
+/* Whole Background */
+body {
+  background: wheat;
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 30px;
+  /* Adjust the padding as needed */
+  font-family: 'Quinoa Text SC Ultrabold', sans-serif;
+  color: wheat;
+  background: #272D50;
+}
+
+.logo-link {
+  font-family: 'Quinoa Text SC Ultrabold', sans-serif;
+  font-size: 24px;
+  color: wheat;
+  text-decoration: none;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+  vertical-align: 2px;
+  /* Move the text slightly down */
+}
+
+.logo-link:hover {
+  transform: scale(1.1);
+  color: #F7BB0D;
+}
+
+.nav-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  display: flex;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: wheat;
+}
+
+.nav-link:hover {
+  color: #F7BB0D;
+  /* Change color on hover */
+}
+
+
+button {
+  padding: 10px;
+  border: 1px solid #ee4d2d;
+  border-radius: 5px;
+  width: 100%;
+  background-color: #ee4d2d;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+button:hover {
+  background-color: #ffffff;
+  color: #ee4d2d;
+}
+
+
+/*Footer CSS*/
+footer {
+  font-family: 'Quinoa Text SC Ultrabold', sans-serif;
+  font-style: italic;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #272D50;
+  /* Background color for the footer */
+  color: #F7BB0D;
+  /* Text color */
+  text-align: center;
+  /* Center align text */
+  padding: 10px 0;
+  /* Add padding for better spacing */
+}
+
+/*Login Form */
+
+.login-form {
+  /* Class for the main container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #272D50;
+  padding: 20px;
+  padding-right: 50px;
+  border: 1px solid #ddd;
+  color: wheat;
+  border-radius: 5px;
+  width: 300px;
+  margin: 0 auto;
+
+}
+
+.login-form label {
+  /* Style for labels */
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.login-form__label .click {
+  color: wheat;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  /* Styles for input fields */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.login-form button[type="submit"] {
+  /* Style for submit button */
+  background-color: wheat;
+  color: #272D50;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-inline-start: 13px;
+}
+
+.login-form button[type="submit"]:hover {
+  /* Added hover effect */
+  background-color: burlywood;
+}
+
+.login-form .error-message {
+  /* Style for error message */
+  color: red;
+  margin-bottom: 10px;
+}
+
+/*Register css*/
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #272D50;
+  padding: 20px;
+  padding-right: 50px;
+  border: 1px solid #ddd;
+  color: wheat;
+  border-radius: 5px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.register-form label {
+  /* Style for labels */
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.register-form label .click {
+  color: wheat;
+}
+
+
+
+.register-form input[type="text"],
+.register-form input[type="password"] {
+  /* Styles for input fields */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.register-form button[type="submit"] {
+  /* Style for submit button */
+  background-color: wheat;
+  color: #272D50;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-inline-start: 13px;
+}
+
+.register-form button[type="submit"]:hover {
+  background-color: burlywood;
+
+}
+
+.register-form .error-message {
+  /* Style for error message */
+  color: red;
+  margin-bottom: 10px;
+}
+
+
+input {
+  padding: 12px;
+  border: 1px solid #ee4d2d;
+  border-radius: 5px;
+  width: 375px;
+}
+
+
+/* CSS */
+header nav ul li:hover>* {
+  transition: 0.5s ease;
+  background-color: #ffffff;
+  color: #ee4d2d;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+/*Products css*/
+
+.products-container {
+  /* Container for all product cards */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* Responsive grid layout */
+  gap: 20px;
+  /* Spacing between cards */
+}
+
+.product-card {
+  /* Style for the main product container */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow */
+  padding: 10px;
+  text-align: center;
+  /* Center text within the card */
+  background-color: #3892d3;
+}
+
+.product-card img {
+  /* Style for product image */
+  width: 220px;
+  /* Stretch image to fill container width */
+  height: 150px;
+  /* Adjust image height as needed */
+  object-fit: cover;
+  /* Crop image to fit within container */
+}
+
+.product-card h2 {
+  /* Style for product name */
+  margin-top: 10px;
+  /* Add space above product name */
+  font-size: 18px;
+  /* Adjust font size */
+}
+
+.product-card p {
+  /* Style for product price */
+  margin-bottom: 5px;
+  /* Add space below product price */
+  font-weight: bold;
+}
+
+/*Select products css*/
+.product-wrapper {
+  display: flex;
+  /* Allow centering of content */
+  justify-content: center;
+  /* Horizontally center content */
+  align-items: center;
+  /* Vertically center content */
+  min-height: 100vh;
+  /* Set minimum height for full viewport */
+  background-color: #f5f5f5;
+  /* Light background color */
+  background: wheat;
+}
+
+.product-container {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: white;
+  /* White background for the product info */
+  padding: 40px;
+  display: flex;
+  /* Allow arranging elements side-by-side */
+  flex-direction: column;
+  margin-top: -100px;
+  /* Stack elements vertically */
+  width: 400px;
+  /* Adjust width as needed */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow */
+  background-color: #3892d3;
+}
+
+.submit-button {
+  margin-top: 20px;
+  background-color: yellow;
+  /* Blue color */
+  color: black;
+}
+
+.cancel-button {
+  background-color: green;
+  /* Red color */
+  color: black;
+  margin-bottom: -20px;
+  text-align: left;
+}
+
+.product-image {
+  width: 250px;
+  /* Adjust width as needed */
+  height: 250px;
+  /* Adjust height as needed */
+  object-fit: cover;
+  /* Crop image to fit within container */
+  margin-bottom: 10px;
+  /* Add space below image */
+  align-self: center;
+  /* Center image horizontally */
+}
+
+.product-details {
+  flex: 1;
+  /* Allow details to fill remaining space */
+}
+
+.product-name {
+  font-weight: bold;
+  font-size: 25px;
+  /* Adjust font size as needed */
+  margin-bottom: 25px;
+  margin-inline-start: 70px;
+}
+
+.product-price {
+  color: #333;
+  font-size: 25px;
+  font-style: italic;
+}
+
+.product-actions {
+  margin-top: 10px;
+  /* Add margin for spacing */
+  display: flex;
+  justify-content: space-between;
+  /* Align buttons horizontally */
+}
+
+.product-actions button {
+  margin-top: auto;
+  /* Move buttons to bottom */
+  display: flex;
+  flex-direction: column;
+  /* Stack buttons vertically */
+  justify-content: space-between;
+}
+
+.update-button {
+  background-color: green;
+  /* Blue color */
+  color: white;
+}
+
+.delete-button {
+  background-color: #d33838;
+  /* Red color */
+  color: white;
+}
+
+.error-message {
+  color: red;
+  /* Set error message text color to red */
+  font-weight: bold;
+  /* Make the message text bold */
+  margin-bottom: 10px;
+  /* Add some space below the error message */
+  text-align: center;
+  /* Center error message horizontally */
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* Adjust as needed */
+}
+
+.loading-label {
+  font-size: 1.5rem;
+  /* Adjust as needed */
+  color: #333;
+  /* Adjust color as needed */
+}
